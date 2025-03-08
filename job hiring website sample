@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Websitet</title>
+    <link rel="stylesheet" href="style.css">
+    
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.leftmenu h4 {
+    font-size: 22px;
+    color: #f9b917;
+    text-transform: uppercase;
+}
+
+.rightmenu ul {
+    list-style: none;
+    display: flex;
+}
+
+.rightmenu ul li {
+    margin: 0 15px;
+}
+
+.rightmenu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.rightmenu ul li a:hover {
+    color: #f9b917;
+}
+
+
+.bgimage {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 60px; 
+}
+
+#text {
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #f9b917, #ff512f);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: white;
+}
+
+button {
+    padding: 12px 25px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+#first {
+    background: #f9b917;
+    color: #000;
+}
+
+#first:hover {
+    background: #ff9f1a;
+    transform: scale(1.1);
+}
+
+#second {
+    background: #ff512f;
+    color: white;
+}
+
+#second:hover {
+    background: #e03e26;
+    transform: scale(1.1);
+}
+
+</style>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="bgimage">
+        <div class="menu">
+            <div class="leftmenu">
+                <h4>website logo</h4>
+            </div>
+            <div class="rightmenu">
+                <ul>
+                    <li id="firstlist"><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Blogs</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <h1 id="text">
+                JOB HIRING
+            </h1>
+
+            <h3>
+                WE ARE HIRING SPORTS AND CASINO GAMES DEVELOPERS
+            </h3>
+            <button id="first" name="button.2" >button1</button>
+                <button id="second" name="button.2">button2</button>
+        </div>
+
+    </div>
+</body>
+</html>
